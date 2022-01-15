@@ -1,8 +1,27 @@
+body{
+  background-color: #1D2D50;
+  margin:0 ;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  color:#EEEEEE
+}
+
+/* 
+  **param Header : 03C4A1
+*/
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #0F044C;
+  /* margin-top: 60px; */
+  margin: 0;
+  padding: 0;
+
+
 }
+.holacomoe{
+  height: 200vh;
+}
+
