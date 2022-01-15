@@ -1,4 +1,4 @@
-import logo from '../assets/itsdavidev.svg'
+import logo from '../assets/header/itsdavidev.svg'
 
 class Nabar extends HTMLElement {
     constructor() {

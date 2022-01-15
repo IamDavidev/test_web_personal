@@ -1,15 +1,15 @@
-import imageMe from '../assets/ImageMe.jpeg'
-import fondoWeb from '../assets/fondoWeb.webp'
+import imageMe from '../assets//header/ImageMe.jpeg'
+import fondoWeb from '../assets/header/fondoWeb.webp'
 
 
-class main extends HTMLElement{
-    constructor(){
+class main extends HTMLElement {
+    constructor() {
         super();
-        this.attachShadow({mode:'open'});
-}
+        this.attachShadow({ mode: 'open' });
+    }
 
-static get styles(){
-    return /*css*/`
+    static get styles() {
+        return /*css*/`
     .containerImageMe{
         height: 70vh;
         position: relative;
@@ -26,11 +26,17 @@ static get styles(){
             object-fit: cover;
         }
         .containerMe{
+            height:100px
             background:#1D2D50;
             display:flex;
             justify-content:center;
             align-items:center;
             flex-direction:column;
+        }
+        .containerMe picture {
+            height:100px;
+            margin:0;
+            padding:0;
         }
     .imageMe{;
         display:flex;
@@ -46,25 +52,24 @@ static get styles(){
         top: -100px;
     }
     `;
-}
+    }
 
-connectedCallback(){
-     this.render();
-}
-render(){
-    this.shadowRoot.innerHTML =/*html*/`
+    connectedCallback() {
+        this.render();
+    }
+    render() {
+        this.shadowRoot.innerHTML =/*html*/`
         <style>${main.styles}</style>
- <div class="containerImageMe">
+    <div class="containerImageMe">
         <div class='fondo'></div>
         <div class='containerMe'>
-        <picture class='imageMe'>
-        <img src=${imageMe} alt=""/>
-        </picture>
-        itsDavidev 
+            <picture class='imageMe'>
+                <img src=${imageMe} alt=""/>
+            </picture>
         </div>
         <slot></slot>
-</div>
+    </div>
     `;
+    }
 }
-}
-customElements.define('main-ui',main);
+customElements.define('main-ui', main);

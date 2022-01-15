@@ -2,7 +2,6 @@ body{
   background-color: #1D2D50;
   margin:0 ;
   padding:0;
-  font-family: 'Roboto', sans-serif;
   color:#EEEEEE
 }
 
@@ -14,14 +13,22 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #0F044C;
+  color: #ffffff;
   /* margin-top: 60px; */
   margin: 0;
   padding: 0;
-
-
 }
-.holacomoe{
-  height: 200vh;
+section{
+  margin: 3rem 0 ;
 }
 
+.tecnologias{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction:column
+}
+.tecnologiasMain{ 
+display:grid;
+grid-template-columns:1fr 1fr 
+}
