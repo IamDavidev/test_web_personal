@@ -26,7 +26,7 @@ class main extends HTMLElement {
             object-fit: cover;
         }
         .containerMe{
-            height:100px
+            height:100px;
             background:#1D2D50;
             display:flex;
             justify-content:center;
