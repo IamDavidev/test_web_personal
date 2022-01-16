@@ -12,7 +12,15 @@
       <navbar-ui></navbar-ui>
       <main>
         <header class="header">
-          <main-ui></main-ui>
+          <div class="containerImageMe">
+            <div class="fondo"></div>
+            <div class="containerMe">
+              <picture class="imageMe">
+                <img src='/assets/ImageMe.jpeg' alt="" />
+              </picture>
+            </div>
+            <slot></slot>
+          </div>
         </header>
         <section class="sobre mi">
           <h1>sobre mi</h1>
@@ -21,7 +29,7 @@
         <section class="tecnologias">
           <h1>tecnologias</h1>
           <div class="tecnologiasMain">
-            <tecnologias-ui name="html"></tecnologias-ui>
+            <tecnologias-ui class='js' name="html"></tecnologias-ui>
             <tecnologias-ui name="js"></tecnologias-ui>
             <tecnologias-ui name="css"></tecnologias-ui>
             <tecnologias-ui name="react"></tecnologias-ui>
@@ -33,32 +41,28 @@
           <projects-ui name="dblog"></projects-ui>
           <projects-ui name="davtion"></projects-ui>
         </section>
-        <section>
-          <h1>contacto</h1>
+        <h1>contacto</h1>
+        <section class="contact">
           <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-              <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-              <label
-                >Your Role:
-                <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select></label
-              >
-            </p>
-            <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
+            <div class="containerContact">
+              <div class="info">
+                <p>
+                  <label>Nombre <input type="text" name="name" placeholder="nombre .. " /></label>
+                </p>
+                <p>
+                  <label> Email <input type="email" name="email" placeholder="example@gmail.com" /></label>
+                </p>
+              </div>
+              <div class="message">
+                <p>
+                  <label> Mensaje <textarea name="message"> </textarea></label>
+                </p>
+              </div>
+              <div class="submit">
+                <button type="submit">Send</button>
+              </div>
+            </div>
           </form>
-          <form></form>
         </section>
       </main>
     </div>

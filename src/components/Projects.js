@@ -19,9 +19,14 @@ class Projects extends HTMLElement {
     static get styles() {
         return /*css*/`
         .containerProjects{
-            margin: 1rem 0;
-            padding; 1rem;
+            margin: .4rem 0;
+            padding: 1rem;
         }
+
+        a{
+            text-decoration:none;
+        }
+
         .renderProject{
          display:flex;
          justify-content:center;
@@ -29,9 +34,25 @@ class Projects extends HTMLElement {
          flex-direction:column
         
         }
+
         .renderProject > img{
+            border-radius:1rem;
             width: 300px;
+            opacity: 0.6;
+            transition: all .5s ease-in-out;
         }
+
+        .renderProject > img:hover{
+            opacity: 1;
+        }
+        
+        .renderProject > strong{
+            text-decoration:none;
+            padding:1rem;
+            color:#ffc600;
+            text-transform:uppercase
+        }
+
          
     `;
     }

@@ -1,5 +1,5 @@
 import imageMe from '../assets//header/ImageMe.jpeg'
-import fondoWeb from '../assets/header/fondoWeb.webp'
+import fondoWeb from '../assets/header/mariola-grobelska-h6XihPOkSIY-unsplash.jpg'
 
 
 class main extends HTMLElement {
@@ -19,15 +19,20 @@ class main extends HTMLElement {
         height: 25rem;
         background-image: url(${fondoWeb});
         background-size: cover;
+        background-position: center;
+        object-fit:cover;
+        width: 100%;
+        z-index: -1;
         }
         .fondo img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+            position: relative
         }
         .containerMe{
             height:100px;
-            background:#1D2D50;
+            background:#000;
             display:flex;
             justify-content:center;
             align-items:center;

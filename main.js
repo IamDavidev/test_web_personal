@@ -1,6 +1,6 @@
 import './style.css'
 import './src/components/Navbar'
-import './src/components/MainWeb'
+// import './src/components/MainWeb'
 import './src/components/SobreMi'
 import './src/components/Tecnologias'
 import './src/components/Projects'

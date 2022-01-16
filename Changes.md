@@ -1,0 +1,9 @@
+  --> cambiar title 
+  --> agregar la imagen en el apartado de sobre mi
+  --> agregar un router 
+  -->  ruta sobre mi completo
+  --> ruta tecnologias
+  --> agregar url a los protectos 
+  --> 
+  --> 
+  --> 

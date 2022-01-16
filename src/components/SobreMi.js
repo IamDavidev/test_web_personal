@@ -1,4 +1,4 @@
-import lit from '../assets/header/itsdavidev.svg'
+import lit from '../assets/icons/lit.svg'
 
 class SobreMi extends HTMLElement {
     constructor() {
@@ -22,17 +22,18 @@ class SobreMi extends HTMLElement {
         .imgMi > img {
             width: 200px;
             border-radius: 1rem;
-            border: 1px solid #000;
+            border: 1px solid #1db9c3;
             padding:.3rem;
         }
         .descriptionMe{
-            border: 1px solid #000;
+            border: 1px solid #1db9c3;
             border-radius:1rem;
+            border-left:0;
         }
         .descriptionMe > p{
             padding:0;
             margin:0;
-
+            color:#ffc600;
         }
     `;
     }
@@ -51,9 +52,10 @@ class SobreMi extends HTMLElement {
             </div> 
             <div class='descriptionMe'>
                 <h3>David Lezama</h3>
-                <p>Soy un un desarollador y programador autodidacta</p><p> apasionado por la tecnología.</p>
+                <p>Soy un un desarollador y programador autodidacta</p>
+                <p> apasionado por la tecnología.</p>
                 <p>Me gusta aprender nuevas tecnologias y</p>
-                <p> aprender de los demas</p>
+                <p> aprender de los demas.</p>
             </div>
                  </div>
         <slot></slot>
