@@ -34,13 +34,8 @@ class Tecnologias extends HTMLElement {
             height: 80px;
             margin: .3rem 1rem;
             object-fit: contain;
-            animation: fadeIn 5s infinite;
+            animation: fadeIn 2s infinite;
             z-index: -1;
-     -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-     -ms-transform: rotate(45deg);
-     -o-transform: rotate(45deg);
-     transform: rotate(45deg);
         }
         .ContainerTecnologias{
             display: flex;

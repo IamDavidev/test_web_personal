@@ -31,8 +31,7 @@ class Projects extends HTMLElement {
          display:flex;
          justify-content:center;
          align-items:center;
-         flex-direction:column
-        
+         flex-direction:column  ; 
         }
 
         .renderProject > img{
@@ -40,6 +39,7 @@ class Projects extends HTMLElement {
             width: 300px;
             opacity: 0.6;
             transition: all .5s ease-in-out;
+             border-radius:10px;
         }
 
         .renderProject > img:hover{
