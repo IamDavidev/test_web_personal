@@ -20,13 +20,18 @@ class Nabar extends HTMLElement {
                 display:flex;
                 justify-content: space-around;
                 align-items: center;
-                background-color: #35858B;
                 margin: 1rem 5rem;
                 border-radius:2rem;
+                color:#0fff;
+                background: rgba( 0, 0, 0, 0.15 );
+                // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 0px );
+                -webkit-backdrop-filter: blur( 0px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
                 padding:.3rem;
                 position:fixed;
                overflow:hidden;
-               padding: 0.1rem 3rem 
+               padding: 0.1rem 3rem ;
                z-index:10;
 
             }
@@ -42,7 +47,7 @@ class Nabar extends HTMLElement {
             }
             a{
                 text-decoration:none;
-                color:#000;
+                color:#0ff;
                 font-weight:bold;
             }
     `;

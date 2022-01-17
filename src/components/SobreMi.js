@@ -1,4 +1,4 @@
-import lit from '../assets/icons/lit.svg'
+import Me from '/assets/Me.jpeg'
 
 class SobreMi extends HTMLElement {
     constructor() {
@@ -24,9 +24,10 @@ class SobreMi extends HTMLElement {
             border-radius: 1rem;
             border: 1px solid #1db9c3;
             padding:.3rem;
+            margin: 1rem; 
         }
         .descriptionMe{
-            border: 1px solid #1db9c3;
+            border-bottom: 1px solid #1db9c3;
             border-radius:1rem;
             border-left:0;
         }
@@ -48,7 +49,7 @@ class SobreMi extends HTMLElement {
  <div class='sobremi'>
      <div class='containerSobreMi'>
             <div class='imgMi' >
-                <img src=${lit}   alt='itsdavidev davidev davidlezama david'/>
+                <img src=${Me}   alt='itsdavidev davidev davidlezama david'/>
             </div> 
             <div class='descriptionMe'>
                 <h3>David Lezama</h3>

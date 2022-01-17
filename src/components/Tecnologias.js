@@ -3,13 +3,13 @@ import html from '../assets/icons/html.svg'
 import css from '../assets/icons/css.svg'
 import js from '../assets/icons/js.svg'
 import mongodb from '../assets/icons/mongodb.svg'
-import webcomponents from '../assets/icons/webcomponents.svg'
+import webC from '../assets/icons/webcomponents.svg'
 import firebase from '../assets/icons/firebase.svg'
 import react from '../assets/icons/react.svg'
 import strapi from '../assets/icons/strapi.svg'
 import graphql from '../assets/icons/graphql.svg'
 import postcss from '../assets/icons/postcss.svg' 
-const tecnologias = { lit, html, css, js, mongodb, webcomponents, firebase, strapi, react,graphql,postcss }
+const tecnologias = { lit, html, css, js, mongodb, webC, firebase, strapi, react,graphql,postcss }
 
 class Tecnologias extends HTMLElement {
     constructor() {
@@ -28,14 +28,14 @@ class Tecnologias extends HTMLElement {
             justify-content: center;
             align-items: center;
             width: 10rem;
-            margin:  1rem 2rem;
+            margin:  1rem 3rem;
         }
         .ContainerTecnologias > img{
             width: 80px;
             height: 80px;
             margin: .3rem 1rem;
             object-fit: contain;
-            animation: fadeIn 2s infinite;
+            animation: fadeIn 4s infinite;
             z-index: -1;
         }
         .ContainerTecnologias{
@@ -45,26 +45,17 @@ class Tecnologias extends HTMLElement {
             align-items: center;
             width: 100%;
             height: 100%;
-            margin: .5rem 1rem;
-            border-radius:1rem;
-            padding:1rem;
-
+            padding:0.3rem 1.5rem;
         }
-
         .name strong{
-            text-transform: uppercase;
-            font-size: 1.3rem;
-            border-bottom: 1px solid #1db9c3;
-            transition: all .4s ease-in-out;
-        }
-        .name strong:hover{
             color: #1DB9C3;
             border-bottom:2px solid #ffc600;
+            transition: all .4s ease-in-out;
         }
         @keyframes fadeIn {
-            0% {transform: translateY(10px); }
+            0% {transform: translateY(12px); }
             50% {transform: translateY(0px);}
-            100% {transform: translateY(10px);}
+            100% {transform: translateY(12px);}
 
         }
     `;

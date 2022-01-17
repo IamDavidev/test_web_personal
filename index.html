@@ -25,6 +25,12 @@
         <section class="sobre mi">
           <h1>sobre mi</h1>
           <sobre-mi></sobre-mi>
+          <button id="btnMoreMe" class="custom-btn btnPrimary"  >
+          ver más
+          </button>
+        </section>
+        <section id="moreMe" class="moreMe">
+          <more-me></more-me>
         </section>
         <section class="tecnologias">
           <h1>tecnologias</h1>
@@ -33,8 +39,8 @@
             <tecnologias-ui name="js"></tecnologias-ui>
             <tecnologias-ui name="css"></tecnologias-ui>
             <tecnologias-ui name="react"></tecnologias-ui>
-            <button id="btnMoreTec">
-              <span>+</span>
+            <button id="btnMoreTec" class="custom-btn btnPrimary">
+              ver más
             </button>
           </div>
         </section>
@@ -48,15 +54,15 @@
               <tecnologias-ui name="mongodb"></tecnologias-ui>
               <tecnologias-ui name="postcss"></tecnologias-ui>
               <tecnologias-ui name="graphql"></tecnologias-ui>
-              <tecnologias-ui name="webcomponents"></tecnologias-ui>
+              <tecnologias-ui name="webC"></tecnologias-ui>
             </div>
           </div>
         </section>
         <section class="proyectos">
           <h1>proyectos</h1>
-          <projects-ui name="davgram"></projects-ui>
           <projects-ui name="dblog"></projects-ui>
           <projects-ui name="davtion"></projects-ui>
+          <projects-ui name="davgram"></projects-ui>
         </section>
         <h1>contacto</h1>
         <section class="contact">
@@ -66,7 +72,7 @@
                 <p>
                   <label
                     >Nombre
-                    <input type="text" name="name" placeholder="nombre .. "
+                    <input type="text" name="name" 
                   /></label>
                 </p>
                 <p>
@@ -85,7 +91,7 @@
                 </p>
               </div>
               <div class="submit">
-                <button type="submit">Send</button>
+                <button type="submit" class="custom-btn btnPrimary" >Enviar </button>
               </div>
             </div>
           </form>
