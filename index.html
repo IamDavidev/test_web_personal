@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>David dev</title>
@@ -16,7 +16,7 @@
             <div class="fondo"></div>
             <div class="containerMe">
               <picture class="imageMe">
-                <img src='/assets/ImageMe.jpeg' alt="" />
+                <img src="/assets/ImageMe.jpeg" alt="" />
               </picture>
             </div>
             <slot></slot>
@@ -29,10 +29,27 @@
         <section class="tecnologias">
           <h1>tecnologias</h1>
           <div class="tecnologiasMain">
-            <tecnologias-ui class='js' name="html"></tecnologias-ui>
+            <tecnologias-ui class="js" name="html"></tecnologias-ui>
             <tecnologias-ui name="js"></tecnologias-ui>
             <tecnologias-ui name="css"></tecnologias-ui>
             <tecnologias-ui name="react"></tecnologias-ui>
+            <button id="btnMoreTec">
+              <span>+</span>
+            </button>
+          </div>
+        </section>
+        <section id="moreTec" class="moreTecnologias">
+          <h1>mas tecnologias</h1>
+          <div class="tecmore">
+            <div class="renderMoreTecnologias">
+              <tecnologias-ui name="lit"></tecnologias-ui>
+              <tecnologias-ui name="strapi"></tecnologias-ui>
+              <tecnologias-ui name="firebase"></tecnologias-ui>
+              <tecnologias-ui name="mongodb"></tecnologias-ui>
+              <tecnologias-ui name="postcss"></tecnologias-ui>
+              <tecnologias-ui name="graphql"></tecnologias-ui>
+              <tecnologias-ui name="webcomponents"></tecnologias-ui>
+            </div>
           </div>
         </section>
         <section class="proyectos">
@@ -47,10 +64,19 @@
             <div class="containerContact">
               <div class="info">
                 <p>
-                  <label>Nombre <input type="text" name="name" placeholder="nombre .. " /></label>
+                  <label
+                    >Nombre
+                    <input type="text" name="name" placeholder="nombre .. "
+                  /></label>
                 </p>
                 <p>
-                  <label> Email <input type="email" name="email" placeholder="example@gmail.com" /></label>
+                  <label>
+                    Email
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="example@gmail.com"
+                  /></label>
                 </p>
               </div>
               <div class="message">

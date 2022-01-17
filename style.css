@@ -3,8 +3,6 @@ body {
   margin: 0;
   padding: 0;
   color: #5800FF;
-  ;
-  ;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,6 +32,8 @@ section {
   background-position: center;
   object-fit: cover;
   width: 100%;
+  /* animation:life 7s ease-in-out infinite; */
+  background-position: center;
   z-index: -1;
 }
 
@@ -87,6 +87,24 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr
 }
+
+.moreTecnologias{
+  overflow: hidden;
+  position: fixed;
+}
+.tecmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tecmore > h1 {
+  display:block;
+}
+.renderMoreTecnologias{
+ display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 .containerContact {
   display: grid;
@@ -144,4 +162,19 @@ section {
 
 .submit {
   grid-column: 1/6;
+}
+
+
+
+
+@keyframes life {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

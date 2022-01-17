@@ -2,13 +2,14 @@ import lit from '../assets/icons/lit.svg'
 import html from '../assets/icons/html.svg'
 import css from '../assets/icons/css.svg'
 import js from '../assets/icons/js.svg'
-import monngodb from '../assets/icons/mongodb.svg'
+import mongodb from '../assets/icons/mongodb.svg'
 import webcomponents from '../assets/icons/webcomponents.svg'
 import firebase from '../assets/icons/firebase.svg'
 import react from '../assets/icons/react.svg'
 import strapi from '../assets/icons/strapi.svg'
-
-const tecnologias = { lit, html, css, js, monngodb, webcomponents, firebase, strapi, react }
+import graphql from '../assets/icons/graphql.svg'
+import postcss from '../assets/icons/postcss.svg' 
+const tecnologias = { lit, html, css, js, mongodb, webcomponents, firebase, strapi, react,graphql,postcss }
 
 class Tecnologias extends HTMLElement {
     constructor() {
@@ -45,7 +46,6 @@ class Tecnologias extends HTMLElement {
             width: 100%;
             height: 100%;
             margin: .5rem 1rem;
-            border-bottom:1px solid #1DB9C3;
             border-radius:1rem;
             padding:1rem;
 
