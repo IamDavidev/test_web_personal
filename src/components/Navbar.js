@@ -8,11 +8,11 @@ class Nabar extends HTMLElement {
 
     static get styles() {
         return /*css*/`
-        .navbarContainer{
-            display:flex;
-            align-items:center;
-            flex-direction:column;
-        }
+             .navbarContainer{
+                display:flex;
+                align-items:center;
+                flex-direction:column;
+             }
             img{
                 width: 50px;
             }
@@ -24,18 +24,14 @@ class Nabar extends HTMLElement {
                 border-radius:2rem;
                 color:#0fff;
                 background: rgba( 0, 0, 0, 0.8 );
-
-                
-                // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                 backdrop-filter: blur( 0px );
                 -webkit-backdrop-filter: blur( 0px );
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
                 padding:.3rem;
                 position:fixed;
-               overflow:hidden;
-               padding: 0.1rem 3rem ;
-               z-index:10;
-
+                overflow:hidden;
+                padding: 0.1rem 3rem ;
+                z-index:10;
             }
             ul{
                 list-style:none;
@@ -66,13 +62,21 @@ class Nabar extends HTMLElement {
      <div class="navbarContainer">
         <nav>
             <div  className="logo">
-             <img src=${logo}  alt='itsdavidev logo davidev '/>
+                <a href='#header'>
+                    <img src=${logo}  alt='itsdavidev logo davidev '/>
+                </a>
             </div>
             <div className="navLinks">
                      <ul>
-                        <li><a href="#"> Principal </a></li>
-                        <li><a href="#">  Sobre mi  </a></li>
-                        <li><a href="#"> Tecnologias </a></li>
+                        <li>
+                            <a href="#sobreMi"> Sobre Mi </a>
+                        </li>
+                        <li>
+                            <a href="#tecnologias">  Tecnologias </a>
+                        </li>
+                        <li>
+                            <a href="#proyectos"> Proyectos </a>
+                        </li>
                      </ul>
             </div>
         </nav>

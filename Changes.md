@@ -1,5 +1,3 @@
-  -->  ruta sobre mi completo  
-  --> agregar url a los protectos 
-  --> modificar proyectos para que no deje tanto padding 
-  --> 
-  --> 
+  -->fondo animado de codepen 
+  -->version movil !!!!!!!!
+  --> urls proyects

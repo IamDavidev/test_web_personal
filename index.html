@@ -11,7 +11,7 @@
     <div id="app">
       <navbar-ui></navbar-ui>
       <main>
-        <header class="header">
+        <header id='header' class="header">
           <div class="containerImageMe">
             <div class="fondo"></div>
             <div class="containerMe">
@@ -23,7 +23,7 @@
             <slot></slot>
           </div>
         </header>
-        <section class="sobre mi">
+        <section id='sobreMi'   class="sobre mi">
           <h1 class='titles'>sobre mi</h1>
           <sobre-mi></sobre-mi>
           <!-- <social-ui name='github'></social-ui> -->
@@ -32,20 +32,22 @@
             <more-me></more-me>
           </div>
         </section>
-        <section class="tecnologias">
+        <section id="tecnologias" class="tecnologias">
           <h1 class="titles">Tecnologías </h1>
           <div class="tecnologiasMain">
             <tecnologias-ui class="js" name="html"></tecnologias-ui>
             <tecnologias-ui name="js"></tecnologias-ui>
             <tecnologias-ui name="css"></tecnologias-ui>
             <tecnologias-ui name="react"></tecnologias-ui>
-            <button id="btnMoreTec" class="custom-btn btnPrimary">
-              ver más
-            </button>
+            <div class="btnMore">
+
+              <button id="btnMoreTec" class="custom-btn btnPrimary">
+                ver más
+              </button>
+            </div>
           </div>
         </section>
         <section id="moreTec" class="moreTecnologias">
-          <h1 class='titles'>Mas tecnologías </h1>
           <div class="tecmore">
             <div class="renderMoreTecnologias">
               <tecnologias-ui name="lit"></tecnologias-ui>
@@ -58,7 +60,7 @@
             </div>
           </div>
         </section>
-        <section class="proyectos">
+        <section id='proyectos'  class="proyectos">
           <h1 class="titles">proyectos</h1>
           <projects-ui name="dblog"></projects-ui>
           <projects-ui name="davtion"></projects-ui>

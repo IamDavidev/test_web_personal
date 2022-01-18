@@ -27,11 +27,18 @@ class Socials extends HTMLElement{
 static get styles(){
     return /*css*/`
     .socials{
-     margin: .4rem 1rem; 
+     margin: .4rem 1rem;
+     border-bottom: 1px solid #ff00ff;
+     cursor: pointer;
     }
        img{
-              width: 50px;
+        opacity: .5; 
+        width: 50px;
+        transition: all .4s ease-in-out;
        } 
+       img:hover{
+           opacity: 1
+       }
     `;
 }
 

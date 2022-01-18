@@ -4,9 +4,9 @@ import dblog from '../assets/projects/dblog.png'
 
 const projects = { davgram, davtion, dblog }
 const links = {
-    davgram: 'https://davgram.herokuapp.com/',
-    davtion: 'https://davtion.herokuapp.com/',
-    dblog: 'https://davblog.herokuapp.com/'
+    davgram: 'https://youthful-neumann-3d117c.netlify.app/explorehttps://davgram.herokuapp.com/',
+    davtion: 'https://davtion.ga/',
+    dblog: 'https://dblog.ga/'
 
 }
 
@@ -49,7 +49,8 @@ class Projects extends HTMLElement {
         .renderProject > strong{
             text-decoration:none;
             padding:1rem;
-            color:#ffc600;
+            color:#ff00ff;
+            font-weight:bold;
             text-transform:uppercase
         }
 
@@ -67,7 +68,7 @@ class Projects extends HTMLElement {
         <style>${Projects.styles}</style>
  <div class='projects'>
      <div class='containerProjects'>
-     <a href='#' target='_blank'    >
+     <a href='${links[this.name]}' target='_blank'    >
         <div class='renderProject' >
             <img  src='${projects[this.name]}'  alt='${this.name}'    />  
                 <strong>

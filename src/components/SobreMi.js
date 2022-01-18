@@ -32,7 +32,8 @@ class SobreMi extends HTMLElement {
         .descriptionMe > p{
             padding:0;
             margin:0;
-            color:#FFC600;
+            color:#ff00ff;
+            font-weight:bold;
         }
         .socialsMe{
             display:flex;

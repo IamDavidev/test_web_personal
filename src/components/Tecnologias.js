@@ -20,7 +20,10 @@ class Tecnologias extends HTMLElement {
     static get styles() {
         return /*css*/`
         strong{
-            color: #FFC600;
+            color: #ff00ff;
+            text-transform:uppercase;
+            font-weight:bold;
+            border-bottom:1px solid #0ff;
         }
         .tecnologias{
             display: flex;
@@ -33,7 +36,7 @@ class Tecnologias extends HTMLElement {
         .ContainerTecnologias > img{
             width: 80px;
             height: 80px;
-            margin: .3rem 1rem;
+            margin: auto 1rem;
             object-fit: contain;
             animation: fadeIn 4s infinite;
             z-index: -1;
@@ -48,7 +51,7 @@ class Tecnologias extends HTMLElement {
             padding:0.3rem 1.5rem;
         }
         .name strong{
-            color: #5800FF;;
+            color: #ff00ff;
             border-bottom:2px solid #ffc600;
             transition: all .4s ease-in-out;
         }
@@ -74,6 +77,9 @@ class Tecnologias extends HTMLElement {
  <div class='tecnologias'>
      <div class='ContainerTecnologias'>
         <img  src='${tecnologias[this.name]}' alt=${this.name}   />
+        <strong>
+            ${this.name}
+        </strong>
      </div>
         <slot></slot>
 </div>

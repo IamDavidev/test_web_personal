@@ -23,7 +23,8 @@ class MoreMe extends HTMLElement {
         .containerMoreMe > p{
             padding:0;
             margin:.3rem;
-            color:#FFC600;
+            color:#ff00ff;
+            font-weight:bold;
         }
         .t-justify{
             text-align:justify;
@@ -57,13 +58,13 @@ class MoreMe extends HTMLElement {
                         </p>
                         <p class='t-justify'>
                             Me cosidero una persona que tiene claro sus objetivos y que siempre
-                            estoy buscando la mejor de lograr las cosas que me propongo
-                            y que me ayude a lograrlo.
+                            estoy buscando la mejor forma  de lograr las cosas que me propongo
+                            y dar mi mayor esfuerzo en todo lo que realizo.
                         </p>
                         <p class='t-justify'>
                             Actualmente estoy buscando una oportunidad laboral 
                             para poder mejorar mi desempeño y mejorar mi
-                            capacidades de desarollo y poner seguir mejorando cada dia.
+                            capacidades de desarollo para poder seguir mejorando cada dia.
                         </p>
                         <div class='social'>
                             <social-ui name='instagram'></social-ui>
