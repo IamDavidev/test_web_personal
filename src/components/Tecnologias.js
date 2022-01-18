@@ -61,6 +61,18 @@ class Tecnologias extends HTMLElement {
             100% {transform: translateY(12px);}
 
         }
+        @media(min-width:300px){
+            .ContainerTecnologias{
+                display:flex;
+                flex-direction: column;
+            }
+            .ContainerTecnologias> img{
+                margin-bottom:1rem;
+            }
+            .tecnologias{
+                margin:1rem auto ;
+            }
+        }
     `;
     }
 

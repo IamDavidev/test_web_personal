@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 section {
-  margin:5rem 0;
+  margin: 5rem 0;
 }
 
 /* 
@@ -34,11 +34,11 @@ section {
   font-weight: 900;
   font-family: 'Georgia', 'Catamaran', sans-serif;
   font-style: italic;
-font: italic bold Georgia, Serif;
-text-shadow: -14px 7px 0 #320341;
+  font: italic bold Georgia, Serif;
+  text-shadow: -14px 7px 0 #320341;
 }
 
-.subTitle{
+.subTitle {
   position: relative;
   text-transform: uppercase;
   font-size: 25px;
@@ -49,7 +49,7 @@ text-shadow: -14px 7px 0 #320341;
 }
 
 .containerImageMe {
-  height: 70vh;
+  /* height: 70vh; */
   position: relative;
   z-index: 20;
 }
@@ -88,7 +88,7 @@ text-shadow: -14px 7px 0 #320341;
   color: rgb(0, 255, 179);
   text-shadow: -1px 0px 10px #000;
   font-size: 1.2rem;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .imageMe img {
@@ -207,27 +207,29 @@ text-shadow: -14px 7px 0 #320341;
 }
 
 .tecnologiasMain {
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  
+
 }
+
 .btnMore {
-  grid-column:1/3;
+  grid-column: 1/3;
   display: flex;
   justify-content: center;
-  align-items:center;
-  margin:.3rem 0rem;
+  align-items: center;
+  margin: .3rem 0rem;
 }
+
 .moreTecnologias {
   overflow: hidden;
   position: fixed;
 }
 
 .tecmore {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -328,5 +330,39 @@ display: flex;
   100% {
     box-shadow: 0 5px 15 0 rgba(255, 255, 255, 1);
     transform: translateY(0px);
+  }
+}
+
+
+
+@media (min-width:300px) and (max-width:1023px){
+  .titles {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .sobreMi {
+    margin-top: 7rem;
+  }
+
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .renderMoreTecnologias {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+
+
+
+}
+
+
+
+@media (min-width:1024px){
+  .sobreMi{
+    margin:0
   }
 }

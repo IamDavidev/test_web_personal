@@ -1,6 +1,5 @@
 import './style.css'
 import './src/components/Navbar'
-// import './src/components/MainWeb'
 import './src/components/SobreMi'
 import './src/components/Tecnologias'
 import './src/components/Projects'
@@ -15,8 +14,6 @@ const $btnMoreMe = document.querySelector('#btnMoreMe')
 //tecnlogias
 const $moreTecnologias = document.querySelector('#moreTec')
 const $btnMoreTecnologias = document.querySelector('#btnMoreTec')
-
-
 
 
 let snowMe = true
@@ -42,3 +39,4 @@ $btnMoreMe.addEventListener('click',()=> {
     snowMe = !snowMe
     return  $moreMe.classList.add('moreMe')
 })
+
