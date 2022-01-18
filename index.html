@@ -16,24 +16,24 @@
             <div class="fondo"></div>
             <div class="containerMe">
               <picture class="imageMe">
-                <img src="/assets/ImageMe.jpeg" alt="" />
+                <img src="/assets/ImageMe.jpeg" alt="itsDavidev davidev istdavidev david lezamam " />
+                <strong> frontend jr </strong>
               </picture>
             </div>
             <slot></slot>
           </div>
         </header>
         <section class="sobre mi">
-          <h1>sobre mi</h1>
+          <h1 class='titles'>sobre mi</h1>
           <sobre-mi></sobre-mi>
-          <button id="btnMoreMe" class="custom-btn btnPrimary"  >
-          ver más
-          </button>
-        </section>
-        <section id="moreMe" class="moreMe">
-          <more-me></more-me>
+          <!-- <social-ui name='github'></social-ui> -->
+          <button id="btnMoreMe" class="custom-btn btnPrimary">ver más</button>
+          <div id="moreMe" class="moreMe">
+            <more-me></more-me>
+          </div>
         </section>
         <section class="tecnologias">
-          <h1>tecnologias</h1>
+          <h1 class="titles">Tecnologías </h1>
           <div class="tecnologiasMain">
             <tecnologias-ui class="js" name="html"></tecnologias-ui>
             <tecnologias-ui name="js"></tecnologias-ui>
@@ -45,7 +45,7 @@
           </div>
         </section>
         <section id="moreTec" class="moreTecnologias">
-          <h1>mas tecnologias</h1>
+          <h1 class='titles'>Mas tecnologías </h1>
           <div class="tecmore">
             <div class="renderMoreTecnologias">
               <tecnologias-ui name="lit"></tecnologias-ui>
@@ -59,21 +59,18 @@
           </div>
         </section>
         <section class="proyectos">
-          <h1>proyectos</h1>
+          <h1 class="titles">proyectos</h1>
           <projects-ui name="dblog"></projects-ui>
           <projects-ui name="davtion"></projects-ui>
           <projects-ui name="davgram"></projects-ui>
         </section>
-        <h1>contacto</h1>
+        <h1 class="titles">contacto</h1>
         <section class="contact">
           <form name="contact" method="POST" data-netlify="true">
             <div class="containerContact">
               <div class="info">
                 <p>
-                  <label
-                    >Nombre
-                    <input type="text" name="name" 
-                  /></label>
+                  <label>Nombre <input type="text" name="name"  placeholder="tu nombre .." /></label>
                 </p>
                 <p>
                   <label>
@@ -91,7 +88,9 @@
                 </p>
               </div>
               <div class="submit">
-                <button type="submit" class="custom-btn btnPrimary" >Enviar </button>
+                <button type="submit" class="custom-btn btnPrimary">
+                  Enviar
+                </button>
               </div>
             </div>
           </form>

@@ -1,9 +1,5 @@
-  --> cambiar title 
-  --> agregar la imagen en el apartado de sobre mi
-  --> agregar un router 
-  -->  ruta sobre mi completo
-  --> ruta tecnologias
+  -->  ruta sobre mi completo  
   --> agregar url a los protectos 
-  --> 
+  --> modificar proyectos para que no deje tanto padding 
   --> 
   --> 

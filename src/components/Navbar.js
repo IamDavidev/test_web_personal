@@ -23,7 +23,9 @@ class Nabar extends HTMLElement {
                 margin: 1rem 5rem;
                 border-radius:2rem;
                 color:#0fff;
-                background: rgba( 0, 0, 0, 0.15 );
+                background: rgba( 0, 0, 0, 0.8 );
+
+                
                 // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                 backdrop-filter: blur( 0px );
                 -webkit-backdrop-filter: blur( 0px );

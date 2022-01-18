@@ -22,19 +22,23 @@ class SobreMi extends HTMLElement {
         .imgMi > img {
             width: 200px;
             border-radius: 1rem;
-            border: 1px solid #1db9c3;
             padding:.3rem;
             margin: 1rem; 
         }
         .descriptionMe{
-            border-bottom: 1px solid #1db9c3;
             border-radius:1rem;
             border-left:0;
         }
         .descriptionMe > p{
             padding:0;
             margin:0;
-            color:#ffc600;
+            color:#FFC600;
+        }
+        .socialsMe{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
         }
     `;
     }
@@ -52,11 +56,15 @@ class SobreMi extends HTMLElement {
                 <img src=${Me}   alt='itsdavidev davidev davidlezama david'/>
             </div> 
             <div class='descriptionMe'>
-                <h3>David Lezama</h3>
+                <h3>ItsDavidev </h3>
                 <p>Soy un un desarollador y programador autodidacta</p>
                 <p> apasionado por la tecnología.</p>
                 <p>Me gusta aprender nuevas tecnologias y</p>
                 <p> aprender de los demas.</p>
+                <div class='socialsMe'>
+                <social-ui name='github'></social-ui>
+                <social-ui name='likedin'></social-ui>
+                </div>
             </div>
                  </div>
         <slot></slot>

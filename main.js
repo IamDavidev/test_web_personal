@@ -5,7 +5,7 @@ import './src/components/SobreMi'
 import './src/components/Tecnologias'
 import './src/components/Projects'
 import './src/components/MoreMe'
-
+import './src/components/Socials'
 //sobre mi 
 const $moreMe = document.querySelector('#moreMe')
 const $btnMoreMe = document.querySelector('#btnMoreMe')

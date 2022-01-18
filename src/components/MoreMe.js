@@ -1,34 +1,78 @@
-class MoreMe extends HTMLElement{
-    constructor(){
+class MoreMe extends HTMLElement {
+    constructor() {
         super();
-        this.attachShadow({mode:'open'});
-}
-
-static get styles(){
-    return /*css*/`
-        :host{
-
+        this.attachShadow({ mode: 'open' });
     }
+
+    static get styles() {
+        return /*css*/`
+       .moreMe{
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           margin:3rem 0rem 0rem 0rem;
+           padding:0;
+       }
+       .containerMoreMe{
+           display:flex;
+           flex-direction: column;
+            justify-content:center;
+            align-items:center;
+
+        }
+        .containerMoreMe > p{
+            padding:0;
+            margin:.3rem;
+            color:#FFC600;
+        }
+        .t-justify{
+            text-align:justify;
+            max-width:20rem;
+        }
+        .social{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
     `;
-}
+    }
 
-connectedCallback(){
-     this.render();
-}
+    connectedCallback() {
+        this.render();
+    }
 
-render(){
-    this.shadowRoot.innerHTML =/*html*/`
+    render() {
+        this.shadowRoot.innerHTML =/*html*/`
         <style>${MoreMe.styles}</style>
  <div class='moreMe'>
-     <div class='containerMoreMe'>
-       <h1>
-        mas sobre mi
-       </h1> 
-
-     </div>
+ <div class='containerMoreMe'>
+                      <p class='t-justify'>
+                            Mi nombre es Brayan David Lezama Trejo soy un 
+                            desarollador web de  18 años.
+                            Actualme vivo en la cuidad de pachuca hidalgo mx.
+                        </p>
+                        <p class='t-justify'>
+                            soy una persona que le gusta mucho la musica en especial 
+                            el rock y la musica electronica.         
+                        </p>
+                        <p class='t-justify'>
+                            Me cosidero una persona que tiene claro sus objetivos y que siempre
+                            estoy buscando la mejor de lograr las cosas que me propongo
+                            y que me ayude a lograrlo.
+                        </p>
+                        <p class='t-justify'>
+                            Actualmente estoy buscando una oportunidad laboral 
+                            para poder mejorar mi desempeño y mejorar mi
+                            capacidades de desarollo y poner seguir mejorando cada dia.
+                        </p>
+                        <div class='social'>
+                            <social-ui name='instagram'></social-ui>
+                            <social-ui name='twitter'></social-ui>
+                        </div>
+                        </div>
         <slot></slot>
 </div>
     `;
+    }
 }
-}
-customElements.define('more-me',MoreMe);
+customElements.define('more-me', MoreMe);

@@ -10,15 +10,27 @@ body {
 }
 
 section {
-  margin: 3rem 0;
+  margin:5rem 0;
 }
 
 /* 
  
 #1DB9C3
-#FFC600
+#
+
 
 */
+
+.titles {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 55px;
+  color: #0ff;
+  font-weight: 900;
+  font-family: 'Catamaran', sans-serif;
+  font-style: italic;
+}
+
 .containerImageMe {
   height: 70vh;
   position: relative;
@@ -45,6 +57,32 @@ section {
   position: relative
 }
 
+.imageMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageMe>strong {
+  position: relative;
+  font-weight: bold;
+  top: -80px;
+  color: rgb(0, 255, 179);
+  text-shadow: -1px 0px 10px #000;
+  font-size: 1.2rem;
+  text-transform:uppercase;
+}
+
+.imageMe img {
+  object-fit: cover;
+  width: 14rem;
+  position: relative;
+  border-radius: 30%;
+  top: -101px;
+}
+
+
 .containerMe {
   height: 100px;
   background: #000;
@@ -69,8 +107,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: #0ff;
-  box-shadow: 0px 1px 0px #0ff;
+  box-shadow: 0px 2px 0px #5800FF;
 }
 
 .moreMe {
@@ -145,16 +182,6 @@ section {
 
 
 
-
-.imageMe img {
-  object-fit: cover;
-  width: 15rem;
-  position: relative;
-  border-radius: 50%;
-  top: -100px;
-}
-
-
 .tecnologias {
   display: flex;
   justify-content: center;
@@ -209,7 +236,7 @@ section {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #EEEEEE;
-  color: #ffc300;
+  color: #ff00ff;
   padding: .3rem;
   margin: 1rem;
 }
@@ -232,7 +259,7 @@ section {
 .message textarea {
   width: 20rem;
   height: 10rem;
-  color: #ffc300;
+  color: #ff00ff;
   border: 1px solid #EEEEEE;
   background-color: transparent;
   border-top: 0;

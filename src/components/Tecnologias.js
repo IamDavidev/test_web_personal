@@ -48,7 +48,7 @@ class Tecnologias extends HTMLElement {
             padding:0.3rem 1.5rem;
         }
         .name strong{
-            color: #1DB9C3;
+            color: #5800FF;;
             border-bottom:2px solid #ffc600;
             transition: all .4s ease-in-out;
         }
@@ -74,11 +74,6 @@ class Tecnologias extends HTMLElement {
  <div class='tecnologias'>
      <div class='ContainerTecnologias'>
         <img  src='${tecnologias[this.name]}' alt=${this.name}   />
-        <div class='name'>   
-            <strong>
-                ${this.name}
-            </strong>    
-        </div>
      </div>
         <slot></slot>
 </div>
