@@ -1,4 +1,7 @@
 import logo from '../assets/itsdavidev.svg'
+import menuModal from '../assets/menu.png'
+import xModal from '../assets/x.png'
+
 
 class Nabar extends HTMLElement {
     constructor() {
@@ -61,6 +64,10 @@ class Nabar extends HTMLElement {
                 .navbarContainer{
                     display:flex;
                     align-items:flex-start;
+                    position: fixed;
+                    top:0;
+                    left:0;
+                    z-index:5;
                 }
                 nav{
                     margin:0px;
@@ -81,6 +88,10 @@ class Nabar extends HTMLElement {
                 li{
                     margin: 1rem 0;
                 }
+                button{
+                    background: transparent;
+                    border:none;
+                }
                 .cerrarModal{
                     display: flex;
                     position:absolute;
@@ -94,6 +105,9 @@ class Nabar extends HTMLElement {
                 .btnModal{
                     position:initial
                 }
+                .btn{
+                    width:50px;
+                }
             }
     `;
     }
@@ -103,18 +117,21 @@ class Nabar extends HTMLElement {
         const $navbarMovile = this.shadowRoot.querySelector('#navbarMovile');
         const $linkMovile = this.shadowRoot.querySelector('#linkMovile');
         const $logoMovile = this.shadowRoot.querySelector('#logoMovile');
+        const $btnModalX = this.shadowRoot.querySelector('#btnModal');
         document.addEventListener('click', (e) => {
             if (e.target.id !== 'containerNavbarMovile') {
                 $navbarMovile.classList.toggle('movileNav');
                 $logoMovile.classList.toggle('navMovile');
                 $linkMovile.classList.toggle('navMovile');
                 $btnModal.classList.toggle('btnModal')
+                $btnModalX.innerHTML = `<img class='btn'  src=${menuModal} alt="menu"/>`
             }
             if (e.target.id === 'xModal' || e.target.id === 'btnModal') {
                 $navbarMovile.classList.toggle('movileNav');
                 $logoMovile.classList.toggle('navMovile');
                 $linkMovile.classList.toggle('navMovile');
                 $btnModal.classList.toggle('btnModal')
+                $btnModalX.innerHTML = `<img class='btn'  src=${xModal} alt="menu"/>`
             }
 
             }   
@@ -135,7 +152,7 @@ class Nabar extends HTMLElement {
      <nav id='navbarMovile' class="movileNav">
         <div id='xModal' class='cerrarModal '>
             <button id='btnModal' > 
-            cerar
+                <img class='btn' src=${xModal} alt="menu"/>
             </button>
         </div >
             <div id='logoMovile' className="logo">
