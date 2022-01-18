@@ -4,9 +4,9 @@ import dblog from '../assets/projects/dblog.png'
 
 const projects = { davgram, davtion, dblog }
 const links = {
-    davgram: 'https://youthful-neumann-3d117c.netlify.app/explorehttps://davgram.herokuapp.com/',
-    davtion: 'https://davtion.ga/',
-    dblog: 'https://dblog.ga/'
+    davgram: 'https://youthful-neumann-3d117c.netlify.app/explore',
+    davtion: 'https://davtion.vercel.app/',
+    dblog: 'https://dblog-vert.vercel.app'
 
 }
 
