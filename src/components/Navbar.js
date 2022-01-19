@@ -75,7 +75,7 @@ class Nabar extends HTMLElement {
                     transition:all .5s;
                 }
                 .movileNav{
-                    height: 100%;
+                    height: 500px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
