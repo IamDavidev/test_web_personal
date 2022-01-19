@@ -59,7 +59,7 @@ class Nabar extends HTMLElement {
                 .movileV{
                     height:70vh;
                     display:flex;
-                    flex-direction:column
+                    flex-direction:column;
                 }
                 .navbarContainer{
                     display:flex;
@@ -106,7 +106,7 @@ class Nabar extends HTMLElement {
                     position:initial
                 }
                 .btn{
-                    width:50px;
+                    width:30px;
                 }
             }
     `;
@@ -118,26 +118,13 @@ class Nabar extends HTMLElement {
         const $linkMovile = this.shadowRoot.querySelector('#linkMovile');
         const $logoMovile = this.shadowRoot.querySelector('#logoMovile');
         const $btnModalX = this.shadowRoot.querySelector('#btnModal');
-        document.addEventListener('click', (e) => {
-            if (e.target.id !== 'containerNavbarMovile') {
+        $btnModal.addEventListener('click',()=> {
                 $navbarMovile.classList.toggle('movileNav');
                 $logoMovile.classList.toggle('navMovile');
                 $linkMovile.classList.toggle('navMovile');
                 $btnModal.classList.toggle('btnModal')
-                $btnModalX.innerHTML = `<img class='btn'  src=${menuModal} alt="menu"/>`
-            }
-            if (e.target.id === 'xModal' || e.target.id === 'btnModal') {
-                $navbarMovile.classList.toggle('movileNav');
-                $logoMovile.classList.toggle('navMovile');
-                $linkMovile.classList.toggle('navMovile');
-                $btnModal.classList.toggle('btnModal')
-                $btnModalX.innerHTML = `<img class='btn'  src=${xModal} alt="menu"/>`
-            }
-
-            }   
-        )
+        })
     }
-
 
     connectedCallback() {
         this.render();
@@ -152,7 +139,7 @@ class Nabar extends HTMLElement {
      <nav id='navbarMovile' class="movileNav">
         <div id='xModal' class='cerrarModal '>
             <button id='btnModal' > 
-                <img class='btn' src=${xModal} alt="menu"/>
+                <img class='btn' src=${menuModal} alt="menu"/>
             </button>
         </div >
             <div id='logoMovile' className="logo">
