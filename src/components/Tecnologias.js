@@ -61,7 +61,7 @@ class Tecnologias extends HTMLElement {
             100% {transform: translateY(12px);}
 
         }
-        @media(min-width:300px){
+        @media(min-width:300px)and (max-width:1024px){
             .ContainerTecnologias{
                 display:flex;
                 flex-direction: column;

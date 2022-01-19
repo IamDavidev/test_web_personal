@@ -41,7 +41,7 @@ class SobreMi extends HTMLElement {
             justify-content:center;
             align-items:center;
         }
-        @media(min-width:300px){
+        @media(min-width:300px)and (max-width:1024px){
             .containerSobreMi{
                 display:flex;
                 flex-direction:column;
