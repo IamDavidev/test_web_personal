@@ -16,7 +16,7 @@ class Nabar extends HTMLElement {
                 align-items:center;
                 flex-direction:column;
              }
-             .cerrarModal{
+             .btnM{
                  display:none;
              }
             img{
@@ -75,7 +75,7 @@ class Nabar extends HTMLElement {
                     transition:all .5s;
                 }
                 .movileNav{
-                    height: 100vh;
+                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -106,6 +106,9 @@ class Nabar extends HTMLElement {
                 .btnModal{
                     position:initial
                 }
+                .btnM{
+                    display:flex;
+                }
                 .btn{
                     width:30px;
                 }
@@ -124,6 +127,7 @@ class Nabar extends HTMLElement {
                 $logoMovile.classList.toggle('navMovile');
                 $linkMovile.classList.toggle('navMovile');
                 $btnModal.classList.toggle('btnModal')
+                $btnModalX.classList.toggle('cerrarModal')
         })
     }
 
@@ -137,18 +141,18 @@ class Nabar extends HTMLElement {
         <style>${Nabar.styles}</style>
  <div>
      <div id='containerNavbarMovile' class="navbarContainer">
-     <nav id='navbarMovile' class="movileNav">
-        <div id='xModal' class='cerrarModal '>
+     <nav id='navbarMovile' class="">
+        <div id='xModal' class='btnM '>
             <button id='btnModal' > 
                 <img class='btn' src=${menuModal} alt="menu"/>
             </button>
         </div >
-            <div id='logoMovile' className="logo">
+            <div id='logoMovile' class="navMovile">
                 <a href='#header'>
                     <img src=${logo}  alt='itsdavidev logo davidev '/>
                 </a>
             </div>
-            <div  id='linkMovile'  className="navLinks ">
+            <div  id='linkMovile'  class="navMovile ">
                      <ul>
                         <li>
                             <a href="#sobreMi"> Sobre Mi </a>
