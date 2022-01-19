@@ -29,7 +29,7 @@ class Nabar extends HTMLElement {
                 margin: 1rem 5rem;
                 border-radius:2rem;
                 color:#0fff;
-                background: rgba( 0, 0, 0, 0.8 );
+                background: rgba( 0, 0, 0, 0.7 );
                 backdrop-filter: blur( 0px );
                 -webkit-backdrop-filter: blur( 0px );
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -57,7 +57,6 @@ class Nabar extends HTMLElement {
             
             @media (min-width:300px)and (max-width:1024px){
                 .movileV{
-                    height:70vh;
                     display:flex;
                     flex-direction:column;
                 }
@@ -70,11 +69,13 @@ class Nabar extends HTMLElement {
                     z-index:5;
                 }
                 nav{
+                    width:50vw;
                     margin:0px;
                     border-radius:10px;
+                    transition:all .5s;
                 }
                 .movileNav{
-                    height: 50vh;
+                    height: 100vh;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
