@@ -69,6 +69,7 @@ class SobreMi extends HTMLElement {
                 <p> apasionado por la tecnología.</p>
                 <p>Me gusta aprender nuevas tecnologias y</p>
                 <p> aprender de los demas.</p>
+                <a href='/cv.pdf' target='_blank'>Descargar CV</a>
                 <div class='socialsMe'>
                 <social-ui name='github'></social-ui>
                 <social-ui name='likedin'></social-ui>
