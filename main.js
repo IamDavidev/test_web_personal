@@ -23,44 +23,42 @@ let snowMe = true
 let snowTec = true
 
 // eventos
-$btnMoreTecnologias.addEventListener('click',()=>{
+$btnMoreTecnologias.addEventListener('click', () => {
     $btnMoreTecnologias.innerHTML = snowTec ? 'ver Menos' : 'ver más'
-    if(snowTec){
+    if (snowTec) {
         snowTec = !snowTec
-        return  $moreTecnologias.classList.remove('moreTecnologias')
+        return $moreTecnologias.classList.remove('moreTecnologias')
     }
     snowTec = !snowTec
-    return  $moreTecnologias.classList.add('moreTecnologias')
+    return $moreTecnologias.classList.add('moreTecnologias')
 })
 
-$btnMoreMe.addEventListener('click',()=> {
+$btnMoreMe.addEventListener('click', () => {
     $btnMoreMe.innerHTML = snowMe ? 'ver Menos' : 'ver más'
-    if(snowMe){
+    if (snowMe) {
         snowMe = !snowMe
-        return  $moreMe.classList.remove('moreMe')
+        return $moreMe.classList.remove('moreMe')
     }
     snowMe = !snowMe
-    return  $moreMe.classList.add('moreMe')
+    return $moreMe.classList.add('moreMe')
 })
 
 // validacion de los forumularios 
 
-$formContact.addEventListener('submit',(evt)=> {
-    evt.preventDefault()
+$formContact.addEventListener('submit', (evt) => {
     const name = evt.target[0].value || ' '
     const email = evt.target[1].value || ' '
     const message = evt.target[2].value || ' '
 
-    if(name === ' ' || email === ' ' || message === ' '){
-        console.log(name,email,message)
-       return  $alertForm.innerHTML = 'Todos los campos son obligatorios'
-        
+    if (name === ' ' || email === ' ' || message === ' ') {
+        console.log(name, email, message)
+        return $alertForm.innerHTML = 'Todos los campos son obligatorios'
+
     }
 
-        $alertForm.innerHTML = ` gracaias ${name} por tu mensaje ` 
-        // console.log(name,email,message)
-        
-   setInterval(()=>{
-         $alertForm.innerHTML = ''
-   },5000)
+    $alertForm.innerHTML = ` gracaias ${name} por tu mensaje `
+
+    setInterval(() => {
+        $alertForm.innerHTML = ''
+    }, 5000)
 })

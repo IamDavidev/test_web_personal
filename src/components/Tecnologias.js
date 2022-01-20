@@ -40,6 +40,7 @@ class Tecnologias extends HTMLElement {
             object-fit: contain;
             animation: fadeIn 4s infinite;
             z-index: -1;
+            padding:.4rem
         }
         .ContainerTecnologias{
             display: flex;
