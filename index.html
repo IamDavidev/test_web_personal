@@ -13,7 +13,10 @@
       <main>
         <header id="header" class="header">
           <div class="containerImageMe">
-            <div class="fondo"></div>
+            <div class="fondo">
+              <div class="landscape"></div>
+              <div class="filter"></div>
+            </div>
             <div class="containerMe">
               <picture class="imageMe">
                 <img
@@ -65,16 +68,24 @@
           <projects-ui name="dblog"></projects-ui>
           <projects-ui name="davtion"></projects-ui>
           <projects-ui name="davgram"></projects-ui>
+          <projects-ui name="davcrip"></projects-ui>
+          <projects-ui name="login"></projects-ui>
         </section>
         <h1 class="titles">contacto</h1>
         <section class="contact">
-          <form id='formContact' name="contact" method="POST" data-netlify="true">
+          <form
+            id="formContact"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
             <div class="containerContact">
               <div class="info">
                 <p>
                   <label
                     >Nombre
                     <input
+                      class='inputC'
                       type="text"
                       name="name"
                       placeholder="tu nombre .."
@@ -85,17 +96,18 @@
                   <label>
                     Email
                     <input
+                      class="inputC"
                       type="email"
                       name="email"
                       placeholder="example@gmail.com"
-                      required   
+                      required
                   /></label>
                 </p>
               </div>
               <div class="message">
                 <p>
                   <label>
-                    Mensaje <textarea name="message" required > </textarea>
+                    Mensaje <textarea name="message" required> </textarea>
                   </label>
                 </p>
               </div>
@@ -104,9 +116,7 @@
                   Enviar
                 </button>
               </div>
-              <strong id='alertForm'  >
-                
-              </strong>
+              <strong id="alertForm"> </strong>
             </div>
           </form>
         </section>

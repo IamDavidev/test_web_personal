@@ -28,7 +28,7 @@ static get styles(){
     return /*css*/`
     .socials{
      margin: .4rem 1rem;
-     border-bottom: 1px solid #ff00ff;
+     border-bottom: 1px solid #000
      cursor: pointer;
     }
        img{

@@ -3,10 +3,10 @@ html {
 }
 
 body {
-  background-color: #000000;
+  background-color: #316B83;
   margin: 0;
   padding: 0;
-  color: #5800FF;
+  color: #000000;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +19,6 @@ section {
 }
 
 /* 
- 
 #1DB9C3
 #
 
@@ -35,7 +34,7 @@ section {
   font-family: 'Georgia', 'Catamaran', sans-serif;
   font-style: italic;
   font: italic bold Georgia, Serif;
-  text-shadow: -14px 7px 0 #320341;
+  text-shadow: -14px 7px 0 #000000;
 }
 
 .subTitle {
@@ -48,30 +47,9 @@ section {
   font-style: italic;
 }
 
-.containerImageMe {
-  /* height: 70vh; */
-  position: relative;
-  z-index: 20;
-}
-
 .fondo {
-  height: 25rem;
-  background-image: url(/assets/Fondo.jpg);
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  width: 100%;
-  animation: life 7s ease-in-out;
-  background-position: center;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.fondo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative
+  margin: 3.5rem;
+  height: 10rem;
 }
 
 .imageMe {
@@ -102,7 +80,7 @@ section {
 
 .containerMe {
   height: 100px;
-  background: #000;
+  background: #316B83;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +102,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 2px 0px #5800FF;
+  border-bottom: 0px 2px 0px #5800FF;
 }
 
 .moreMe {
@@ -163,7 +141,8 @@ section {
 }
 
 .btnPrimary:hover {
-  color: #1DB9C3;
+  color: #1013ce;
+  font-weight: bold;
   background: transparent;
   box-shadow: none;
 }
@@ -176,7 +155,7 @@ section {
   right: 0;
   height: 2px;
   width: 0;
-  background: #0ff;
+  background: rgb(0, 0, 0);
   box-shadow:
     -1px -1px 5px 0px #fff,
     7px 7px 20px 0px #0003,
@@ -236,6 +215,7 @@ section {
 
 .tecmore>h1 {
   display: block;
+
 }
 
 .renderMoreTecnologias {
@@ -283,6 +263,12 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.inputC::placeholder {
+  color: #000000;
+  opacity: .7;
+
 }
 
 .message textarea {
@@ -335,7 +321,7 @@ section {
 
 
 
-@media (min-width:300px) and (max-width:1023px){
+@media (min-width:300px) and (max-width:1023px) {
   .titles {
     font-size: 2.5rem;
     margin-top: 3rem;
@@ -361,8 +347,8 @@ section {
 
 
 
-@media (min-width:1024px){
-  .sobreMi{
-    margin:0
+@media (min-width:1024px) {
+  .sobreMi {
+    margin: 0
   }
 }

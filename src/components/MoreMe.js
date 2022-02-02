@@ -23,7 +23,7 @@ class MoreMe extends HTMLElement {
         .containerMoreMe > p{
             padding:0;
             margin:.3rem;
-            color:#ff00ff;
+            color:#000;
             font-weight:bold;
         }
         .t-justify{

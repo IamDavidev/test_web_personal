@@ -8,8 +8,8 @@ import firebase from '../assets/icons/firebase.svg'
 import react from '../assets/icons/react.svg'
 import strapi from '../assets/icons/strapi.svg'
 import graphql from '../assets/icons/graphql.svg'
-import postcss from '../assets/icons/postcss.svg' 
-const tecnologias = { lit, html, css, js, mongodb, webC, firebase, strapi, react,graphql,postcss }
+import postcss from '../assets/icons/postcss.svg'
+const tecnologias = { lit, html, css, js, mongodb, webC, firebase, strapi, react, graphql, postcss }
 
 class Tecnologias extends HTMLElement {
     constructor() {
@@ -20,10 +20,11 @@ class Tecnologias extends HTMLElement {
     static get styles() {
         return /*css*/`
         strong{
-            color: #ff00ff;
+            color: #000;
             text-transform:uppercase;
             font-weight:bold;
-            border-bottom:1px solid #0ff;
+            border-bottom:3px solid #3b004c;
+            letter-spacing: 2px
         }
         .tecnologias{
             display: flex;
@@ -50,11 +51,6 @@ class Tecnologias extends HTMLElement {
             width: 100%;
             height: 100%;
             padding:0.3rem 1.5rem;
-        }
-        .name strong{
-            color: #ff00ff;
-            border-bottom:2px solid #ffc600;
-            transition: all .4s ease-in-out;
         }
         @keyframes fadeIn {
             0% {transform: translateY(12px); }

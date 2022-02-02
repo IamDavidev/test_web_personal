@@ -29,10 +29,14 @@ class SobreMi extends HTMLElement {
             border-radius:1rem;
             border-left:0;
         }
+        .descriptionMe > h3{
+            color: #3b004c
+        }
+
         .descriptionMe > p{
             padding:0;
             margin:0;
-            color:#ff00ff;
+            color:#000;
             font-weight:bold;
         }
         .socialsMe{
@@ -40,6 +44,20 @@ class SobreMi extends HTMLElement {
             flex-direction:row;
             justify-content:center;
             align-items:center;
+        }
+
+        #btncv{
+            background-color: #3b004c;
+            color: #000;
+            padding: .5rem;
+            border-radius: 1rem;
+            border: none;
+            margin: .5rem;
+        }
+        #btncv > a{
+            color: #fff;
+            text-decoration:none;
+            
         }
         @media(min-width:300px)and (max-width:1024px){
             .containerSobreMi{
@@ -69,7 +87,9 @@ class SobreMi extends HTMLElement {
                 <p> apasionado por la tecnología.</p>
                 <p>Me gusta aprender nuevas tecnologias y</p>
                 <p> aprender de los demas.</p>
-                <a href='/cv.pdf' target='_blank'>Descargar CV</a>
+                <button id='btncv' >
+                    <a href='/cv.pdf' target='_blank'>Descargar CV</a>
+                </button>
                 <div class='socialsMe'>
                 <social-ui name='github'></social-ui>
                 <social-ui name='likedin'></social-ui>

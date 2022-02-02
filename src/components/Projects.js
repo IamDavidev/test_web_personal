@@ -1,12 +1,19 @@
 import davgram from '../assets/projects/Davgram.png'
 import davtion from '../assets/projects/Davtion.png'
 import dblog from '../assets/projects/dblog.png'
+import davcrip from '../assets/projects/DavCrip.png'
+import login from '../assets/projects/Login.png'
 
-const projects = { davgram, davtion, dblog }
+
+
+
+const projects = { davgram, davtion, dblog, davcrip, login }
 const links = {
     davgram: 'https://youthful-neumann-3d117c.netlify.app/explore',
     davtion: 'https://davtion.vercel.app/',
-    dblog: 'https://dblog-vert.vercel.app'
+    dblog: 'https://dblog-vert.vercel.app',
+    davcrip: 'https://friendly-mirzakhani-258ddf.netlify.app',
+    login: 'https://epic-aryabhata-2ce570.netlify.app'
 
 }
 
@@ -49,11 +56,13 @@ class Projects extends HTMLElement {
         .renderProject > strong{
             text-decoration:none;
             padding:1rem;
-            color:#ff00ff;
+            color:#000;
             font-weight:bold;
             text-transform:uppercase
         }
-
+        strong {
+            border-bottom: 1px solid #3b004c;       
+        }
          
     `;
     }

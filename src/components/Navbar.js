@@ -37,7 +37,7 @@ class Nabar extends HTMLElement {
                 position:fixed;
                 overflow:hidden;
                 padding: 0.1rem 3rem ;
-                z-index:10;
+                z-index:50;
             }
             ul{
                 list-style:none;
@@ -71,11 +71,11 @@ class Nabar extends HTMLElement {
                 nav{
                     width:50vw;
                     margin:0px;
-                    border-radius:10px;
+                    border-radius:0px;
                     transition:all .5s;
                 }
                 .movileNav{
-                    height: 500px;
+                    height:100% ;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
