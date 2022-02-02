@@ -11,7 +11,7 @@ const projects = { davgram, davtion, dblog, davcrip, login }
 const links = {
     davgram: 'https://youthful-neumann-3d117c.netlify.app/explore',
     davtion: 'https://davtion.vercel.app/',
-    dblog: 'https://dblog-vert.vercel.app',
+    dblog: 'https://dblog.ga/',
     davcrip: 'https://friendly-mirzakhani-258ddf.netlify.app',
     login: 'https://epic-aryabhata-2ce570.netlify.app'
 
