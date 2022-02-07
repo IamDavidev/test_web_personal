@@ -1,16 +1,16 @@
-import logo from '../assets/itsdavidev.svg'
-import menuModal from '../assets/menu.png'
-import xModal from '../assets/x.png'
-import nav from '../assets/nav.svg'
+import logo from '../assets/itsdavidev.svg';
+import menuModal from '../assets/menu.png';
+import xModal from '../assets/x.png';
+import nav from '../assets/nav.svg';
 
 class Nabar extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
 
-    static get styles() {
-        return /*css*/`
+  static get styles() {
+    return /*css*/ `
              .navbarContainer{
                 display:flex;
                 align-items:center;
@@ -114,30 +114,30 @@ class Nabar extends HTMLElement {
                 }
             }
     `;
-    }
+  }
 
-    cerarModal() {
-        const $btnModal = this.shadowRoot.querySelector('#xModal');
-        const $navbarMovile = this.shadowRoot.querySelector('#navbarMovile');
-        const $linkMovile = this.shadowRoot.querySelector('#linkMovile');
-        const $logoMovile = this.shadowRoot.querySelector('#logoMovile');
-        const $btnModalX = this.shadowRoot.querySelector('#btnModal');
-        $btnModal.addEventListener('click',()=> {
-                $navbarMovile.classList.toggle('movileNav');
-                $logoMovile.classList.toggle('navMovile');
-                $linkMovile.classList.toggle('navMovile');
-                $btnModal.classList.toggle('btnModal')
-                $btnModalX.classList.toggle('cerrarModal')
-        })
-    }
+  cerarModal() {
+    const $btnModal = this.shadowRoot.querySelector('#xModal');
+    const $navbarMovile = this.shadowRoot.querySelector('#navbarMovile');
+    const $linkMovile = this.shadowRoot.querySelector('#linkMovile');
+    const $logoMovile = this.shadowRoot.querySelector('#logoMovile');
+    const $btnModalX = this.shadowRoot.querySelector('#btnModal');
+    $btnModal.addEventListener('click', () => {
+      $navbarMovile.classList.toggle('movileNav');
+      $logoMovile.classList.toggle('navMovile');
+      $linkMovile.classList.toggle('navMovile');
+      $btnModal.classList.toggle('btnModal');
+      $btnModalX.classList.toggle('cerrarModal');
+    });
+  }
 
-    connectedCallback() {
-        this.render();
-        this.cerarModal()
-    }
+  connectedCallback() {
+    this.render();
+    this.cerarModal();
+  }
 
-    render() {
-        this.shadowRoot.innerHTML =/*html*/`
+  render() {
+    this.shadowRoot.innerHTML = /*html*/ `
         <style>${Nabar.styles}</style>
  <div>
      <div id='containerNavbarMovile' class="navbarContainer">
@@ -166,11 +166,9 @@ class Nabar extends HTMLElement {
                      </ul>
             </div>
         </nav>
-     
      </div>
-        <slot></slot>
 </div>
     `;
-    }
+  }
 }
 customElements.define('navbar-ui', Nabar);

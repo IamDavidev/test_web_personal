@@ -1,29 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+  --background--color: #041C32;
+  --text--primary: #064663;
+  --title: #04293A
+  --extra:#ECB365
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #316B83;
+* {
   margin: 0;
   padding: 0;
-  color: #000000;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  box-sizing:border-box;
+}
+body {
+  background-color: var(--background--color);
+  margin: 0;
+  padding: 0;
+  color: var(--text--primary);
+  font-family: 'Ubuntu Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  box-sizing: border-box;
 }
 
 section {
   margin: 5rem 0;
+  min-height:100vh
 }
 
-/* 
-#1DB9C3
-#
-
-
-*/
 
 .titles {
   position: relative;
@@ -59,7 +69,7 @@ section {
   align-items: center;
 }
 
-.imageMe>strong {
+.imageMe > strong {
   position: relative;
   font-weight: bold;
   top: -80px;
@@ -72,15 +82,11 @@ section {
 .imageMe img {
   object-fit: cover;
   width: 14rem;
-  position: relative;
   border-radius: 30%;
-  top: -101px;
 }
-
 
 .containerMe {
   height: 100px;
-  background: #316B83;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,16 +99,15 @@ section {
   padding: 0;
 }
 
-.containerMe>picture>img {
+.containerMe > picture > img {
   animation: float 6s ease-in-out infinite;
-
 }
 
 .imageMe {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0px 2px 0px #5800FF;
+  border-bottom: 0px 2px 0px #5800ff;
 }
 
 .moreMe {
@@ -117,16 +122,15 @@ section {
   color: rgb(0, 0, 0);
   border-radius: 5px;
   padding: 10px 25px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-    7px 7px 20px 0px rgba(0, 0, 0, .1),
-    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -136,7 +140,7 @@ section {
   line-height: 42px;
   padding: 0;
   border: none;
-  background: #2C5364;
+  background: #2c5364;
   /* background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%); */
 }
 
@@ -156,9 +160,7 @@ section {
   height: 2px;
   width: 0;
   background: rgb(0, 0, 0);
-  box-shadow:
-    -1px -1px 5px 0px #fff,
-    7px 7px 20px 0px #0003,
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
     4px 4px 5px 0px #0002;
   transition: 400ms ease all;
 }
@@ -176,22 +178,18 @@ section {
   transition: 800ms ease all;
 }
 
-
-
 .tecnologias {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .tecnologiasMain {
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-
 }
 
 .btnMore {
@@ -199,7 +197,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: .3rem 0rem;
+  margin: 0.3rem 0rem;
 }
 
 .moreTecnologias {
@@ -213,18 +211,16 @@ section {
   align-items: center;
 }
 
-.tecmore>h1 {
+.tecmore > h1 {
   display: block;
-
 }
 
 .renderMoreTecnologias {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 10rem;
 }
-
 
 .containerContact {
   display: grid;
@@ -246,9 +242,9 @@ section {
 .info label input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
   color: #000;
-  padding: .3rem;
+  padding: 0.3rem;
   margin: 1rem;
 }
 
@@ -269,15 +265,14 @@ section {
 
 .inputC::placeholder {
   color: #000000;
-  opacity: .7;
-
+  opacity: 0.7;
 }
 
 .message textarea {
   width: 20rem;
   height: 10rem;
   color: #000;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   background-color: transparent;
   border-top: 0;
 }
@@ -290,9 +285,6 @@ section {
   grid-column: 1/6;
 }
 
-
-
-
 @keyframes life {
   0% {
     transform: translate3d(0, -50%, 0);
@@ -302,7 +294,6 @@ section {
     transform: translate3d(0, 0%, 0);
   }
 }
-
 
 @keyframes float {
   0% {
@@ -321,9 +312,7 @@ section {
   }
 }
 
-
-
-@media (min-width:300px) and (max-width:1023px) {
+@media (min-width: 300px) and (max-width: 1023px) {
   .titles {
     font-size: 2.5rem;
     margin-top: 3rem;
@@ -340,17 +329,12 @@ section {
 
   .renderMoreTecnologias {
     display: grid;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
   }
-
-
-
 }
 
-
-
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .sobreMi {
-    margin: 0
+    margin: 0;
   }
 }
