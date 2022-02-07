@@ -1,7 +1,7 @@
 import logo from '../assets/itsdavidev.svg'
 import menuModal from '../assets/menu.png'
 import xModal from '../assets/x.png'
-
+import nav from '../assets/nav.svg'
 
 class Nabar extends HTMLElement {
     constructor() {
@@ -69,7 +69,7 @@ class Nabar extends HTMLElement {
                     z-index:5;
                 }
                 nav{
-                    width:50vw;
+                    width:20vw;
                     margin:0px;
                     border-radius:0px;
                     transition:all .5s;

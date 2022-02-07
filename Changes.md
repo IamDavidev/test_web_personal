@@ -1,3 +1,0 @@
-  -->fondo animado de codepen 
-  -->version movil !!!!!!!!
-  --> urls proyects

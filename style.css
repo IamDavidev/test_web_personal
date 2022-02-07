@@ -219,8 +219,10 @@ section {
 }
 
 .renderMoreTecnologias {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10rem;
 }
 
 
@@ -245,7 +247,7 @@ section {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #EEEEEE;
-  color: #ff00ff;
+  color: #000;
   padding: .3rem;
   margin: 1rem;
 }
@@ -274,7 +276,7 @@ section {
 .message textarea {
   width: 20rem;
   height: 10rem;
-  color: #ff00ff;
+  color: #000;
   border: 1px solid #EEEEEE;
   background-color: transparent;
   border-top: 0;

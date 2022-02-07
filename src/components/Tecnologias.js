@@ -3,13 +3,13 @@ import html from '../assets/icons/html.svg'
 import css from '../assets/icons/css.svg'
 import js from '../assets/icons/js.svg'
 import mongodb from '../assets/icons/mongodb.svg'
-import webC from '../assets/icons/webcomponents.svg'
+import webComponents from '../assets/icons/webcomponents.svg'
 import firebase from '../assets/icons/firebase.svg'
 import react from '../assets/icons/react.svg'
 import strapi from '../assets/icons/strapi.svg'
 import graphql from '../assets/icons/graphql.svg'
 import postcss from '../assets/icons/postcss.svg'
-const tecnologias = { lit, html, css, js, mongodb, webC, firebase, strapi, react, graphql, postcss }
+const tecnologias = { lit, html, css, js, mongodb, webComponents, firebase, strapi, react, graphql, postcss }
 
 class Tecnologias extends HTMLElement {
     constructor() {
