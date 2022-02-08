@@ -13,9 +13,26 @@
       <main>
         <section class="header">
           <header id="header" class="header">
-            <div class="containerImageMe">
-              <div class="socialsPrimary">
-
+            <div class="containerHeader">
+              <div class="headerMe">
+                <div class="sobremi">
+                  <div class="containerSobreMi">
+                    <div class="descriptionMe">
+                      <h3>
+                        <a href="https://github.com/itsDavidev" target="_blank">
+                          ItsDavidev
+                        </a>
+                      </h3>
+                      <p>Soy un un desarollador y programador autodidacta</p>
+                      <p>apasionado por la tecnología.</p>
+                      <p>Me gusta aprender nuevas tecnologias y</p>
+                      <p>aprender de los demas.</p>
+                      <button class="btncv custom-btn btnPrimary">
+                        <a href="/cv.pdf" target="_blank">Descargar CV</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="containerMe">
                 <picture class="imageMe">
@@ -24,46 +41,81 @@
                     alt="itsDavidev davidev istdavidev david lezamam "
                   />
                 </picture>
-                <strong> frontend jr </strong>
+                <footer class="footerMe">
+                  <strong> frontend jr </strong>
+                  <p>brayan David Lezama Trejo</p>
+                  <p>Hombre ~ <span>18</span> años</p>
+                </footer>
               </div>
               <div class="socialSecondary">
-                
+                <div class="socialsMe">
+                  <social-ui name="github"></social-ui>
+                  <social-ui name="likedin"></social-ui>
+                </div>
               </div>
             </div>
           </header>
         </section>
         <section id="sobreMi" class="sobreMi">
-          <h1 class="titles">sobre mi</h1>
-          <sobre-mi></sobre-mi>
-          <button id="btnMoreMe" class="custom-btn btnPrimary">ver más</button>
           <div id="moreMe" class="moreMe">
-            <more-me></more-me>
-          </div>
-        </section>
-        <section id="tecnologias" class="tecnologias">
-          <h1 class="titles">Tecnologías</h1>
-          <div class="tecnologiasMain">
-            <tecnologias-ui class="js" name="html"></tecnologias-ui>
-            <tecnologias-ui name="js"></tecnologias-ui>
-            <tecnologias-ui name="css"></tecnologias-ui>
-            <tecnologias-ui name="react"></tecnologias-ui>
-            <div class="btnMore">
-              <button id="btnMoreTec" class="custom-btn btnPrimary">
-                ver más
-              </button>
+            <picture class="moreMeImage">
+              <img src="/assets/Me.jpeg" alt="" />
+            </picture>
+            <div class="moreMe">
+              <div class="containerMoreMe">
+                <p class="t-justify">
+                  Mi nombre es Brayan David Lezama Trejo soy un desarollador web
+                  de 18 años. Actualme vivo en la cuidad de pachuca hidalgo mx.
+                </p>
+                <p class="t-justify">
+                  soy una persona que le gusta mucho la musica en especial el
+                  rock y la musica electronica.
+                </p>
+                <p class="t-justify">
+                  Me cosidero una persona que tiene claro sus objetivos y que
+                  siempre estoy buscando la mejor forma de lograr las cosas que
+                  me propongo y dar mi mayor esfuerzo en todo lo que realizo.
+                </p>
+                <p class="t-justify">
+                  Actualmente estoy buscando una oportunidad laboral para poder
+                  mejorar mi desempeño y mejorar mi capacidades de desarollo
+                  para poder seguir mejorando cada dia.
+                </p>
+                <div class="social">
+                  <social-ui name="instagram"></social-ui>
+                  <social-ui name="twitter"></social-ui>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section id="moreTec" class="moreTecnologias">
-          <div class="tecmore">
-            <div class="renderMoreTecnologias">
-              <tecnologias-ui name="lit"></tecnologias-ui>
-              <tecnologias-ui name="strapi"></tecnologias-ui>
-              <tecnologias-ui name="firebase"></tecnologias-ui>
-              <tecnologias-ui name="mongodb"></tecnologias-ui>
-              <tecnologias-ui name="postcss"></tecnologias-ui>
-              <tecnologias-ui name="graphql"></tecnologias-ui>
-              <tecnologias-ui name="webComponents"></tecnologias-ui>
+        <section class="tec">
+          <div id="tecnologias" class="tecnologias">
+            <h1 class="titles">Tecnologías</h1>
+            <div class="tecnologiasMain">
+              <tecnologias-ui class="js" name="html"></tecnologias-ui>
+              <tecnologias-ui name="js"></tecnologias-ui>
+              <tecnologias-ui name="css"></tecnologias-ui>
+              <tecnologias-ui name="react"></tecnologias-ui>
+              <div class="btnMore">
+                <button id="btnMoreTec" class="custom-btn btnPrimary">
+                  ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="moreTec" class="moreTecnologias">
+            <div class="tecmore">
+              <div class="renderMoreTecnologias">
+                <!-- <tecnologias-ui name="lit"></tecnologias-ui> -->
+                <tecnologias-ui name="strapi"></tecnologias-ui>
+                <tecnologias-ui name="firebase"></tecnologias-ui>
+                <tecnologias-ui name="mongodb"></tecnologias-ui>
+                <!-- <tecnologias-ui name="postcss"></tecnologias-ui> -->
+                <tecnologias-ui name="graphql"></tecnologias-ui>
+                <tecnologias-ui name="webComponents"></tecnologias-ui>
+                <tecnologias-ui name="nodejs"></tecnologias-ui>
+              </div>
             </div>
           </div>
         </section>

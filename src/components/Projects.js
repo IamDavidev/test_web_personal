@@ -61,7 +61,7 @@ class Projects extends HTMLElement {
             text-transform:uppercase
         }
         strong {
-            border-bottom: 1px solid #3b004c;       
+            border-bottom: 1px solid #ECB365;       
         }
          
     `;

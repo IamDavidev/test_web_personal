@@ -71,7 +71,6 @@ class MoreMe extends HTMLElement {
                             <social-ui name='twitter'></social-ui>
                         </div>
                         </div>
-        <slot></slot>
 </div>
     `;
     }

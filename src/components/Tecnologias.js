@@ -9,16 +9,34 @@ import react from '../assets/icons/react.svg'
 import strapi from '../assets/icons/strapi.svg'
 import graphql from '../assets/icons/graphql.svg'
 import postcss from '../assets/icons/postcss.svg'
-const tecnologias = { lit, html, css, js, mongodb, webComponents, firebase, strapi, react, graphql, postcss }
+import nodejs from '../assets/icons/nodejs.svg'
+
+
+const tecnologias = {
+    lit,
+    html,
+    css,
+    js,
+    mongodb,
+    webComponents,
+    firebase,
+    strapi,
+    react,
+    graphql,
+    postcss,
+    nodejs
+}
 
 class Tecnologias extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open' });
+        this.attachShadow({
+            mode: 'open'
+        });
     }
 
     static get styles() {
-        return /*css*/`
+        return /*css*/ `
         strong{
             color: #000;
             text-transform:uppercase;
@@ -33,6 +51,8 @@ class Tecnologias extends HTMLElement {
             align-items: center;
             width: 10rem;
             margin:  1rem 3rem;
+            position:relative;
+            z-index:10;
         }
         .ContainerTecnologias > img{
             width: 80px;
@@ -50,7 +70,10 @@ class Tecnologias extends HTMLElement {
             align-items: center;
             width: 100%;
             height: 100%;
-            padding:0.3rem 1.5rem;
+            padding:0.3rem 2rem;
+            border:1px solid #ECB365;
+            border-radius:1rem;
+            overflow: hidden
         }
         @keyframes fadeIn {
             0% {transform: translateY(12px); }
@@ -81,17 +104,16 @@ class Tecnologias extends HTMLElement {
 
     render() {
         const name = this.name;
-        this.shadowRoot.innerHTML =/*html*/`
+        this.shadowRoot.innerHTML = /*html*/ `
         <style>${Tecnologias.styles}</style>
- <div class='tecnologias'>
-     <div class='ContainerTecnologias'>
-        <img  src='${tecnologias[this.name]}' alt=${this.name}   />
-        <strong>
-            ${this.name}
-        </strong>
-     </div>
-        <slot></slot>
-</div>
+        <div class='tecnologias'>
+            <div class='ContainerTecnologias'>
+                <img  src='${tecnologias[this.name]}' alt=${this.name}   />
+                <strong>
+                    ${this.name}
+                </strong>
+            </div>
+        </div>
     `;
     }
 }

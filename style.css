@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 :root {
-  --background--color: #041C32;
+  --background--color: #041c32;
   --text--primary: #064663;
-  --title: #04293A
-  --extra:#ECB365
+  --title--color: #04293a;
+  --extra: #ecb365;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -16,7 +14,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 body {
   background-color: var(--background--color);
@@ -30,10 +28,12 @@ body {
 }
 
 section {
-  margin: 5rem 0;
-  min-height:100vh
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .titles {
   position: relative;
@@ -41,9 +41,8 @@ section {
   font-size: 55px;
   color: #0ff;
   font-weight: 900;
-  font-family: 'Georgia', 'Catamaran', sans-serif;
   font-style: italic;
-  font: italic bold Georgia, Serif;
+  letter-spacing: 0.1em;
   text-shadow: -14px 7px 0 #000000;
 }
 
@@ -53,15 +52,8 @@ section {
   font-size: 25px;
   color: #0ff;
   font-weight: 900;
-  font-family: 'Georgia', 'Catamaran', sans-serif;
   font-style: italic;
 }
-
-.fondo {
-  margin: 3.5rem;
-  height: 10rem;
-}
-
 .imageMe {
   display: flex;
   flex-direction: column;
@@ -70,9 +62,7 @@ section {
 }
 
 .imageMe > strong {
-  position: relative;
   font-weight: bold;
-  top: -80px;
   color: rgb(0, 255, 179);
   text-shadow: -1px 0px 10px #000;
   font-size: 1.2rem;
@@ -81,10 +71,17 @@ section {
 
 .imageMe img {
   object-fit: cover;
-  width: 14rem;
+  width: 20rem;
   border-radius: 30%;
 }
-
+.containerHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 15rem;
+}
+.header {
+  margin-top: 8rem;
+}
 .containerMe {
   height: 100px;
   display: flex;
@@ -109,11 +106,77 @@ section {
   align-items: center;
   border-bottom: 0px 2px 0px #5800ff;
 }
+.footerMe {
+  position: relative;
+  top: 120px;
+}
+.footerMe > strong {
+  color: var(--extra);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.footerMe > p {
+  color: #000000;
+}
+.footerMe > p > span {
+  color: var(--extra);
+}
+.sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerSobreMi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.imgMi > img {
+  width: 200px;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  margin: 1rem;
+}
+.descriptionMe {
+  border-radius: 1rem;
+  border-left: 0;
+}
+.descriptionMe > h3 > a {
+  color: var(--extra);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
 
-.moreMe {
-  position: fixed;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.5);
+.descriptionMe > p {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-weight: bold;
+}
+.socialsMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0 2rem;
+}
+.btncv {
+  margin: 1rem 2rem;
+}
+.btncv > a {
+  text-decoration: none;
+  color: var(--extra);
+}
+@media (min-width: 300px) and (max-width: 1024px) {
+  .containerSobreMi {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .custom-btn {
@@ -145,7 +208,7 @@ section {
 }
 
 .btnPrimary:hover {
-  color: #1013ce;
+  color: var(--text--primary);
   font-weight: bold;
   background: transparent;
   box-shadow: none;
@@ -159,7 +222,7 @@ section {
   right: 0;
   height: 2px;
   width: 0;
-  background: rgb(0, 0, 0);
+  background: var(--extra);
   box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
     4px 4px 5px 0px #0002;
   transition: 400ms ease all;
@@ -176,6 +239,50 @@ section {
 .btnPrimary:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+.moreMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: var(--text--primary);
+  border-radius: 1rem;
+}
+.moreMe {
+  margin: 1rem;
+  padding: 1rem;
+}
+.moreMeImage > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+}
+.containerMoreMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerMoreMe > p {
+  padding: 0;
+  margin: 0.3rem;
+  color: #000;
+  font-weight: bold;
+}
+.t-justify {
+  text-align: justify;
+  max-width: 20rem;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tec {
+  background: var(--title--color);
+  margin: 7rem 10rem;
+  border-radius: 1rem;
 }
 
 .tecnologias {
@@ -226,6 +333,15 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+.proyectos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: var(--text--primary);
+  border-radius: 1rem;
+  margin: 2rem 10rem;
+}
 
 .info {
   grid-column: 2/3;
@@ -237,6 +353,7 @@ section {
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+  color: var(--extra);
 }
 
 .info label input {
@@ -260,6 +377,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: var(--extra);
   align-items: center;
 }
 
@@ -283,6 +401,11 @@ section {
 
 .submit {
   grid-column: 1/6;
+}
+.particles {
+  height: 200px;
+  border: 1px solid orange;
+  background-color: #1d3665;
 }
 
 @keyframes life {

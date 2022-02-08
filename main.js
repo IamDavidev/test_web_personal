@@ -8,9 +8,6 @@ import './src/components/Socials'
 
 
 // => DOM => HTML
-//sobre mi 
-const $moreMe = document.querySelector('#moreMe')
-const $btnMoreMe = document.querySelector('#btnMoreMe')
 
 //tecnlogias
 const $moreTecnologias = document.querySelector('#moreTec')
@@ -31,16 +28,6 @@ $btnMoreTecnologias.addEventListener('click', () => {
     }
     snowTec = !snowTec
     return $moreTecnologias.classList.add('moreTecnologias')
-})
-
-$btnMoreMe.addEventListener('click', () => {
-    $btnMoreMe.innerHTML = snowMe ? 'ver Menos' : 'ver más'
-    if (snowMe) {
-        snowMe = !snowMe
-        return $moreMe.classList.remove('moreMe')
-    }
-    snowMe = !snowMe
-    return $moreMe.classList.add('moreMe')
 })
 
 // validacion de los forumularios 

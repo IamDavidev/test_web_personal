@@ -27,11 +27,11 @@ class Nabar extends HTMLElement {
                 justify-content: space-around;
                 align-items: center;
                 margin: 1rem 5rem;
-                border-radius:2rem;
-                color:#0fff;
-                background: rgba( 0, 0, 0, 0.7 );
+                border-radius:1rem;
+                color:#000;
+                background: #064663
                 backdrop-filter: blur( 0px );
-                -webkit-backdrop-filter: blur( 0px );
+                -webkit-backdrop-filter: blur( -10px );
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
                 padding:.3rem;
                 position:fixed;
