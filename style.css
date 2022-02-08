@@ -34,26 +34,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-.titles {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 55px;
-  color: #0ff;
-  font-weight: 900;
-  font-style: italic;
-  letter-spacing: 0.1em;
-  text-shadow: -14px 7px 0 #000000;
-}
-
-.subTitle {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 25px;
-  color: #0ff;
-  font-weight: 900;
-  font-style: italic;
-}
+/* HEADER UI  */
 .imageMe {
   display: flex;
   flex-direction: column;
@@ -75,12 +56,14 @@ section {
   border-radius: 30%;
 }
 .containerHeader {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .header {
   margin-top: 8rem;
+  width: 100%;
 }
 .containerMe {
   height: 100px;
@@ -89,17 +72,14 @@ section {
   align-items: center;
   flex-direction: column;
 }
-
 .containerMe picture {
   height: 100px;
   margin: 0;
   padding: 0;
 }
-
 .containerMe > picture > img {
   animation: float 6s ease-in-out infinite;
 }
-
 .imageMe {
   display: flex;
   justify-content: center;
@@ -122,6 +102,38 @@ section {
 .footerMe > p > span {
   color: var(--extra);
 }
+.socialsMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0 2rem;
+}
+@media (min-width: 300px) and (max-width: 1024px) {
+  .header {
+    margin-top: 3rem;
+  }
+  .containerHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerMe {
+    margin: 6rem 0;
+  }
+  .socialSecondary {
+    margin-top: 3rem;
+  }
+  .socialsMe {
+    flex-direction: row;
+  }
+  .imageMe > img {
+    width: 15rem;
+  }
+}
+/*  SOBREMI UI*/
+
 .sobremi {
   display: flex;
   justify-content: center;
@@ -157,88 +169,6 @@ section {
   margin: 0;
   color: #000;
   font-weight: bold;
-}
-.socialsMe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  margin: 0 2rem;
-}
-.btncv {
-  margin: 1rem 2rem;
-}
-.btncv > a {
-  text-decoration: none;
-  color: var(--extra);
-}
-@media (min-width: 300px) and (max-width: 1024px) {
-  .containerSobreMi {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 10px 25px;
-  letter-spacing: 0.2rem;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  outline: none;
-}
-
-.btnPrimary {
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;
-  background: #2c5364;
-  /* background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%); */
-}
-
-.btnPrimary:hover {
-  color: var(--text--primary);
-  font-weight: bold;
-  background: transparent;
-  box-shadow: none;
-}
-
-.btnPrimary:before,
-.btnPrimary:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: var(--extra);
-  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
-    4px 4px 5px 0px #0002;
-  transition: 400ms ease all;
-}
-
-.btnPrimary:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-.btnPrimary:hover:before,
-.btnPrimary:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
 }
 .moreMe {
   display: flex;
@@ -278,7 +208,14 @@ section {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 1024px) {
+  .moreMe {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+/* TECNOLOGIAS UI  */
 .tec {
   background: var(--title--color);
   margin: 7rem 10rem;
@@ -328,11 +265,17 @@ section {
   justify-content: center;
   margin: 0 10rem;
 }
-
-.containerContact {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+@media (min-width: 300px) and (max-width: 1024px) {
+  .tecnologiasMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .renderMoreTecnologias {
+    margin: 0;
+    flex-direction: column;
+  }
 }
+/*  PROYECTOS */
 .proyectos {
   display: flex;
   justify-content: center;
@@ -341,6 +284,12 @@ section {
   background: var(--text--primary);
   border-radius: 1rem;
   margin: 2rem 10rem;
+}
+
+/* CONTACT */
+.containerContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .info {
@@ -407,6 +356,102 @@ section {
   border: 1px solid orange;
   background-color: #1d3665;
 }
+/*  EXTRA UI */
+.titles {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 55px;
+  color: #0ff;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-shadow: -14px 7px 0 #000000;
+}
+.subTitle {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #0ff;
+  font-weight: 900;
+  font-style: italic;
+}
+.btncv {
+  margin: 1rem 2rem;
+}
+.btncv > a {
+  text-decoration: none;
+  color: var(--extra);
+}
+.btnPrimary:hover {
+  color: var(--text--primary);
+  font-weight: bold;
+  background: transparent;
+  box-shadow: none;
+}
+
+.btnPrimary:before,
+.btnPrimary:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: var(--extra);
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+
+.btnPrimary:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.btnPrimary:hover:before,
+.btnPrimary:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 300px) and (max-width: 1024px) {
+  .containerSobreMi {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px 25px;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btnPrimary {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #2c5364;
+  /* background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%); */
+}
 
 @keyframes life {
   0% {
@@ -448,11 +493,6 @@ section {
   .containerContact {
     display: flex;
     flex-direction: column;
-  }
-
-  .renderMoreTecnologias {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }
 
